@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+    <h2>APPLICATION FORM</h2>
     <form>
         <fieldset>
             <legend>Personal Information:</legend>
@@ -18,11 +19,17 @@
             <label for="dob">Date Of Birth: </label>
             <input type="date" name="dob" id="dob"><br>
             <br>
+            <label for="phn">Phone: </label>
+            <input type="tel" name="phn" id="phn" placeholder="Enter Phone no here"><br>
+            <br>
             <label for="Email">Email: </label>
             <input type="email" name="Email" id="Email" placeholder="Enter email here"><br>
             <br>
             <label for="Passwd">Password: </label>
             <input type="password" name="Passwd" id="Passwd" placeholder="Enter password here"><br>
+            <br>
+            <label for="textarea1">Address: </label>
+            <textarea name="textarea1" id="textarea1" rows="7" cols="40"></textarea><br>
             <br>
         </fieldset>
         <fieldset>
@@ -43,15 +50,24 @@
             <label for="cty3">Water Colour Painting: </label>
             <input type="checkbox" name="colortype3" id="cty3">
         </fieldset>
+        <fieldset>
+            <legend>Other Information: </legend>
+            <label for="ocu">Your Ocupation:</label>
+            <select name="Ocupation" id="ocu" >
+                <option value="placeholder">Click to select</option>
+                <option value="st">Student</option>
+                <option value="tch">Teacher</option>
+                <option value="other">Other</option>
+            </select>
+            <br><br>
+            <label for="exp">Experience: </label>
+            <input type="number" name="exp" id="exp" max="50" min="0"><br>
+            <br>
+            <label for="fileup">Resume: </label>
+            <input type="file" name="fileup" id="fileup"><br>
+            <br>
+        </fieldset>
         <br>
-        <label for="ocu">Your Ocupation:</label>
-        <select name="Ocupation" id="ocu" >
-            <option value="placeholder">Click to select</option>
-            <option value="st">Student</option>
-            <option value="tch">Teacher</option>
-            <option value="other">Other</option>
-        </select>
-        <br><br>
         <input type="submit" name="sbmt" id="sbmt">
     </form>
 </body>
